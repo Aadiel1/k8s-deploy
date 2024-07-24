@@ -10,7 +10,7 @@ COPY . .
 
 RUN npm run build
 
-FROM nginx:stable-alpine
+FROM nginx:1.26.1-alpine3.19
 
 RUN mkdir /usr/share/nginx/buffer
 
